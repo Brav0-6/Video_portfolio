@@ -7,11 +7,12 @@ interface VideoCardProps {
   title: string;
   category: string;
   delay?: number;
+  imageUrl?: string;
 }
 
-const VideoCard: React.FC<VideoCardProps> = ({ youtubeId, title, category, delay = 0 }) => {
+const VideoCard: React.FC<VideoCardProps> = ({ youtubeId, title, category, delay = 0, imageUrl }) => {
   const youtubeUrl = `https://www.youtube.com/watch?v=${youtubeId}`;
-  const thumbnailUrl = `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`;
+  const thumbnailUrl = imageUrl || `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`;
 
   return (
     <FadeIn delay={delay} y={40} className="group">
@@ -29,8 +30,10 @@ const VideoCard: React.FC<VideoCardProps> = ({ youtubeId, title, category, delay
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             loading="lazy"
             onError={(e) => {
-              // Fallback to hqdefault if maxresdefault doesn't exist
-              (e.target as HTMLImageElement).src = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+              if (!imageUrl) {
+                // Fallback to hqdefault if maxresdefault doesn't exist and no custom image is provided
+                (e.target as HTMLImageElement).src = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+              }
             }}
           />
           {/* Dark overlay */}

@@ -5,20 +5,20 @@ import VideoCard from '../components/VideoCard';
 import FadeIn from '../components/FadeIn';
 import Footer from '../sections/Footer';
 
-// Sample YouTube video data — replace with your actual YouTube video IDs
+// Sample YouTube video data with high-quality placeholder images
 const allVideos = [
-  { youtubeId: 'dQw4w9WgXcQ', title: 'Sarah & James — Summer Garden Wedding', category: 'Wedding' },
-  { youtubeId: 'jNQXAC9IVRw', title: 'Emily & David — Beachside Ceremony', category: 'Wedding' },
-  { youtubeId: '9bZkp7q19f0', title: 'Priya & Arjun — Royal Palace Celebration', category: 'Wedding' },
-  { youtubeId: 'kJQP7kiw5Fk', title: 'Maria & Carlos — Vineyard Vows', category: 'Pre-Wedding' },
-  { youtubeId: 'RgKAFK5djSk', title: 'Amanda & Chris — Mountain Retreat', category: 'Wedding' },
-  { youtubeId: 'JGwWNGJdvx8', title: 'Sophia & Liam — Sunset Engagement', category: 'Pre-Wedding' },
-  { youtubeId: 'OPf0YbXqDm0', title: 'Jessica & Michael — Garden Party', category: 'Event' },
-  { youtubeId: 'hT_nvWreIhg', title: 'Anna & Ben — Rustic Barn Wedding', category: 'Wedding' },
-  { youtubeId: 'fJ9rUzIMcZQ', title: 'Lisa & Tom — City Rooftop', category: 'Event' },
-  { youtubeId: '60ItHLz5WEA', title: 'Grace & Noah — Lake House Ceremony', category: 'Wedding' },
-  { youtubeId: 'YQHsXMglC9A', title: 'Diana & Raj — Traditional Celebration', category: 'Event' },
-  { youtubeId: 'CevxZvSJLk8', title: 'Nicole & Alex — Spring Blossom', category: 'Pre-Wedding' },
+  { youtubeId: 'dQw4w9WgXcQ', title: 'Sarah & James — Summer Garden Wedding', category: 'Wedding', imageUrl: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=1280&q=80' },
+  { youtubeId: 'jNQXAC9IVRw', title: 'Emily & David — Beachside Ceremony', category: 'Wedding', imageUrl: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1280&q=80' },
+  { youtubeId: '9bZkp7q19f0', title: 'Priya & Arjun — Royal Palace Celebration', category: 'Wedding', imageUrl: 'https://images.unsplash.com/photo-1549417229-7686ac5595fd?w=1280&q=80' },
+  { youtubeId: 'kJQP7kiw5Fk', title: 'Maria & Carlos — Vineyard Vows', category: 'Pre-Wedding', imageUrl: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=1280&q=80' },
+  { youtubeId: 'RgKAFK5djSk', title: 'Amanda & Chris — Mountain Retreat', category: 'Wedding', imageUrl: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1280&q=80' },
+  { youtubeId: 'JGwWNGJdvx8', title: 'Sophia & Liam — Sunset Engagement', category: 'Pre-Wedding', imageUrl: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1280&q=80' },
+  { youtubeId: 'OPf0YbXqDm0', title: 'Jessica & Michael — Garden Party', category: 'Event', imageUrl: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1280&q=80' },
+  { youtubeId: 'hT_nvWreIhg', title: 'Anna & Ben — Rustic Barn Wedding', category: 'Wedding', imageUrl: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=1280&q=80' },
+  { youtubeId: 'fJ9rUzIMcZQ', title: 'Lisa & Tom — City Rooftop', category: 'Event', imageUrl: 'https://images.unsplash.com/photo-1533174000255-16ccb28c50d7?w=1280&q=80' },
+  { youtubeId: '60ItHLz5WEA', title: 'Grace & Noah — Lake House Ceremony', category: 'Wedding', imageUrl: 'https://images.unsplash.com/photo-1505902722668-23d06115998a?w=1280&q=80' },
+  { youtubeId: 'YQHsXMglC9A', title: 'Diana & Raj — Traditional Celebration', category: 'Event', imageUrl: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1280&q=80' },
+  { youtubeId: 'CevxZvSJLk8', title: 'Nicole & Alex — Spring Blossom', category: 'Pre-Wedding', imageUrl: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1280&q=80' },
 ];
 
 const categories = ['All', 'Wedding', 'Pre-Wedding', 'Event'];
@@ -99,6 +99,7 @@ const WorksPage: React.FC = () => {
               youtubeId={video.youtubeId}
               title={video.title}
               category={video.category}
+              imageUrl={video.imageUrl}
               delay={i * 0.08}
             />
           ))}
