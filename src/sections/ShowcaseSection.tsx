@@ -194,20 +194,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ video, index, totalCards, ran
             </div>
           </div>
 
-          {/* Right Column — Auto-playing video */}
+          {/* Right Column — Video Poster */}
           <div
             className="w-[62%] relative overflow-hidden rounded-[16px] sm:rounded-[24px] md:rounded-[32px] cursor-pointer group"
             onClick={() => onWatch(video)}
           >
-            {/* Auto-playing muted background video */}
-            <video
-              src={video.videoSrc}
-              autoPlay
-              loop
-              muted
-              playsInline
-              poster={video.mainPoster}
-              className="w-full h-full object-cover"
+            {/* Static poster image for better performance */}
+            <img
+              src={video.mainPoster}
+              alt={`${video.title} - Full film poster`}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              loading="lazy"
             />
 
             {/* Hover overlay */}
