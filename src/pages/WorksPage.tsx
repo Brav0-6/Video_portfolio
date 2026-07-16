@@ -7,18 +7,18 @@ import Footer from '../sections/Footer';
 
 // Sample YouTube video data with high-quality nature placeholder images
 const allVideos = [
-  { youtubeId: 'dQw4w9WgXcQ', title: 'Mountain Expedition', category: 'Nature', imageUrl: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1280&q=80' },
-  { youtubeId: 'jNQXAC9IVRw', title: 'Forest River', category: 'Landscape', imageUrl: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1280&q=80' },
-  { youtubeId: '9bZkp7q19f0', title: 'Ocean Waves', category: 'Nature', imageUrl: 'https://images.unsplash.com/photo-1471922694854-ceafcbce1070?w=1280&q=80' },
-  { youtubeId: 'kJQP7kiw5Fk', title: 'Desert Dunes', category: 'Landscape', imageUrl: 'https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?w=1280&q=80' },
-  { youtubeId: 'RgKAFK5djSk', title: 'Autumn Leaves', category: 'Nature', imageUrl: 'https://images.unsplash.com/photo-1444464666168-e0d16ee736b6?w=1280&q=80' },
-  { youtubeId: 'JGwWNGJdvx8', title: 'Winter Snowscape', category: 'Landscape', imageUrl: 'https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1280&q=80' },
-  { youtubeId: 'OPf0YbXqDm0', title: 'Spring Blossoms', category: 'Nature', imageUrl: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1280&q=80' },
-  { youtubeId: 'hT_nvWreIhg', title: 'Jungle Canopy', category: 'Landscape', imageUrl: 'https://images.unsplash.com/photo-1518182170546-076616fd6251?w=1280&q=80' },
-  { youtubeId: 'fJ9rUzIMcZQ', title: 'Canyon Sunset', category: 'Nature', imageUrl: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1280&q=80' },
-  { youtubeId: '60ItHLz5WEA', title: 'Waterfall Cascades', category: 'Landscape', imageUrl: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=1280&q=80' },
-  { youtubeId: 'YQHsXMglC9A', title: 'Starry Night Sky', category: 'Nature', imageUrl: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1280&q=80' },
-  { youtubeId: 'CevxZvSJLk8', title: 'Foggy Morning', category: 'Landscape', imageUrl: 'https://images.unsplash.com/photo-1485160497022-3e09382fb310?w=1280&q=80' },
+  { youtubeId: 'dQw4w9WgXcQ', title: 'Mountain Expedition', category: 'Nature', imageUrl: '/assets/works/1.jpg' },
+  { youtubeId: 'jNQXAC9IVRw', title: 'Forest River', category: 'Landscape', imageUrl: '/assets/works/2.jpg' },
+  { youtubeId: '9bZkp7q19f0', title: 'Ocean Waves', category: 'Nature', imageUrl: '/assets/works/3.jpg' },
+  { youtubeId: 'kJQP7kiw5Fk', title: 'Desert Dunes', category: 'Landscape', imageUrl: '/assets/works/4.jpg' },
+  { youtubeId: 'RgKAFK5djSk', title: 'Autumn Leaves', category: 'Nature', imageUrl: '/assets/works/5.jpg' },
+  { youtubeId: 'JGwWNGJdvx8', title: 'Winter Snowscape', category: 'Landscape', imageUrl: '/assets/works/6.jpg' },
+  { youtubeId: 'OPf0YbXqDm0', title: 'Spring Blossoms', category: 'Nature', imageUrl: '/assets/works/7.jpg' },
+  { youtubeId: 'hT_nvWreIhg', title: 'Jungle Canopy', category: 'Landscape', imageUrl: '/assets/works/8.jpg' },
+  { youtubeId: 'fJ9rUzIMcZQ', title: 'Canyon Sunset', category: 'Nature', imageUrl: '/assets/works/9.jpg' },
+  { youtubeId: '60ItHLz5WEA', title: 'Waterfall Cascades', category: 'Landscape', imageUrl: '/assets/works/10.jpg' },
+  { youtubeId: 'YQHsXMglC9A', title: 'Starry Night Sky', category: 'Nature', imageUrl: '/assets/works/11.jpg' },
+  { youtubeId: 'CevxZvSJLk8', title: 'Foggy Morning', category: 'Landscape', imageUrl: '/assets/works/12.jpg' },
 ];
 
 const categories = ['All', 'Nature', 'Landscape'];
